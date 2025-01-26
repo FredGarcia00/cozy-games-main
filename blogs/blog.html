@@ -38,12 +38,97 @@
             </nav>
         </div>
     </header>
-    <h1 class="blog__title">Coming soon</h1>
+    
+
+    
+    <script src="script.js"></script>
+    
+    <main class="blog-preview-grid wrapper">
+        <article class="blog-preview-card">
+            <!-- <img src="../assets/blog/steam-games-cover.jpg" alt="Cozy Steam Games" class="preview-image"> -->
+            <div class="preview-content">
+                <h2>Discover Your Next Comfort Game: A Guide to Cozy Games on Steam</h2>
+                <div class="post-meta">
+                    <span class="date">January 19, 2025</span>
+                    <span class="read-time">8 min read</span>
+                </div>
+                <p class="preview-text">In today's fast-paced world, sometimes we all need a digital escape that feels like a warm hug. That's where cozy games come in – and Steam has become a treasure trove of these delightful experiences...</p>
+                <a href="articles/steam-cozy-games.html" class="read-more">Read More →</a>
+            </div>
+        </article>
+
+        <article class="blog-preview-card">
+            <!-- <img src="../assets/blog/seasonal-games-cover.jpg" alt="Seasonal Cozy Games" class="preview-image"> -->
+            <div class="preview-content">
+                <h2>Seasonal Cozy Games: The Perfect Games for Every Time of Year</h2>
+                <div class="post-meta">
+                    <span class="date">January 25, 2025</span>
+                    <span class="read-time">10 min read</span>
+                </div>
+                <p class="preview-text">As the seasons change, so do our gaming moods. Let's explore the most atmospheric and fitting cozy games for each season, helping you create the perfect gaming experience all year round...</p>
+                <a href="articles/seasonal-cozy-games.html" class="read-more">Read More →</a>
+            </div>
+        </article>
+
+        <style>
+            .blog-preview-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 2rem;
+                padding: 2rem 0;
+            }
+
+            .blog-preview-card {
+                background: #2a2a2a;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.3s ease;
+            }
+
+            .blog-preview-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .preview-image {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .preview-content {
+                padding: 1.5rem;
+            }
+
+            .preview-content h2 {
+                color: #ffffff;
+                font-size: 1.5em;
+                margin-bottom: 1rem;
+                line-height: 1.3;
+            }
+
+            .preview-text {
+                color: #e0e0e0;
+                margin: 1rem 0;
+                line-height: 1.6;
+            }
+
+            .read-more {
+                display: inline-block;
+                color: #5c8374;
+                text-decoration: none;
+                font-weight: 600;
+                margin-top: 1rem;
+                transition: color 0.3s ease;
+            }
+
+            .read-more:hover {
+                color: #7ca899;
+            }
+        </style>
+    </main>
 
     <footer class="site-footer">
         <p class="wrapper">&copy; 2024 Cozy Game Directory. All rights reserved.</p>
     </footer>
-    
-    <script src="script.js"></script>
 </body>
 </html>
